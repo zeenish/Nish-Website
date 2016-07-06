@@ -1,0 +1,136 @@
+/******GENERAL STYLES******/
+body{
+    font-family: 'Yatra-One', sans-serif;
+    background: #fff;
+    position: relative;
+    padding-top:100px;
+}
+.wrapper, .container{
+    width: 80%;
+    margin: 0 auto;
+}
+.wrap{
+    min-height: calc(100vh - 65px);
+}
+
+/******HEADER/FOOTER LAYOUT******/
+header, footer{
+    background: #666666;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+}
+.title, .main-nav{
+    /*sets ul and h1 side by side*/
+    display: inline-block;
+}
+
+.main-nav li{
+    list-style: none;
+    display: inline-block;
+    font-size: 1.3em;
+    background: #fff;
+    padding: 5px 10px;
+   margin: 5px;
+}
+.title{
+    display: inline-block;
+    font-family: 'Orbitron', cursive;
+    font-size: 2.5em;
+}
+footer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+}
+.banner{
+    width: 101%;
+    height: 150px;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #595959;
+	
+}
+.slogan{
+    padding: 50px;
+    
+}
+section{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+
+
+
+
+
+/*Button stuff*/
+*,*:before,*:after{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	font-size:100%;
+  /*Just for amusement*/
+   transition:all 0.6s ease-out;
+}
+button{
+  display:none
+}
+
+  nav{
+    width:100%;
+    background:#c5cedd;
+    text-align:justify;
+    font-size:0px;
+  }
+  nav a{
+    position:relative;
+    display:inline-block;
+    text-align:center;
+    font-size:1rem;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#465263;
+    width:20%;
+    border-bottom:1px solid #a6aeb7;
+    padding:1em;
+  }
+  nav a:hover,nav a:focus{
+    background:#999999
+  }
+
+@media screen and (max-width:680px){
+  button{
+    display:block;
+    position:relative;
+    width:100%;
+    background:#c5cedd;
+    border:none;
+    padding:1em;
+    z-index:3
+  }
+  nav{
+    position:relative;
+    transform:translateY(-600px);
+    z-index:2
+  }
+  button:focus{
+    background:#e4e7ec
+  }
+  button:focus ~ nav{
+    transform:translateY(0);
+  }
+  nav a{
+    display:block;
+    width:100%;
+  }
+}
